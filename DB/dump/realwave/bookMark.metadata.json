@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_","ns":"realwave.bookMark"}],"uuid":"731491a713b14a00967f510d5d383fa1"}

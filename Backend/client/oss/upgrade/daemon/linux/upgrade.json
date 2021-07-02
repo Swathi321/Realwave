@@ -1,0 +1,90 @@
+{
+	"tasks": [
+		{
+			"label": "Check previous version",
+			"type": "checkPreviousVersion",
+			"arguments": {
+				"versionFile": "~installPath~/Versioning/version.json",
+				"versionToken": "version"
+			},
+			"env": "Linux"
+		},
+		{
+			"label": "Stop Service",
+			"type": "serviceManager",
+			"arguments": {
+				"services": [
+					"realwave-daemon"
+				],
+				"stop": true
+			},
+			"rollback": [
+				"Start Service",
+				"Start App"
+			],
+			"env": "Linux"
+		},
+		{
+			"label": "Download update",
+			"type": "downloadUpdate",
+			"arguments": {
+				"fileName": "~upgradePath~/~newVersion~.zip",
+				"target": "~installPath~/Update/~newVersion~.zip"
+			},
+			"env": "Linux"
+		},
+		{
+			"label": "Application Backup",
+			"type": "cmd",
+			"run": "7z a -tzip -xr!logs -xr!Backups -xr!Update ~installPath~/Backups/~oldVersion~.zip ~installPath~/*",
+			"env": "Linux"
+		},
+		{
+			"label": "Verify application backup exists",
+			"type": "fileExists",
+			"arguments": {
+				"path": "~installPath~/Backups/~oldVersion~.zip",
+				"minSize": 20000
+			},
+			"env": "Linux"
+		},
+		{
+			"label": "Upgrade App",
+			"type": "cmd",
+			"run": "7z x ~installPath~/Update/~newVersion~.zip -aoa -o~installPath~",
+			"rollback": [
+				"Restore App"
+			],
+			"env": "Linux"
+		},
+		{
+			"label": "Download & update version.json",
+			"type": "downloadUpdate",
+			"arguments": {
+				"fileName": "~upgradePath~/version.json",
+				"target": "~installPath~/Versioning/version.json",
+				"replaceIfExist": true
+			},
+			"env": "Linux"
+		},
+		{
+			"label": "Start Service",
+			"type": "serviceManager",
+			"arguments": {
+				"services": [
+					"realwave-daemon"
+				],
+				"stop": false
+			},
+			"env": "Linux"
+		}
+	],
+	"rollback": [
+		{
+			"label": "Restore App",
+			"type": "cmd",
+			"run": "7z x ~installPath~/Backups/~oldVersion~.zip -aoa -o~installPath~",
+			"env": "Linux"
+		}
+	]
+}

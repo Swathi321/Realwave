@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_","ns":"realwave.activityLog"}],"uuid":"3dc813ca71f64c47999a583d6768c26a"}

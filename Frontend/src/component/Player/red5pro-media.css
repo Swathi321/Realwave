@@ -1,0 +1,46 @@
+.red5pro-media-container {
+  display: block;
+  box-sizing: border-box;
+  position: relative;
+  height: 100%;
+  line-height: 0px;
+}
+
+.red5pro-media {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  left: 50%
+}
+
+.red5pro-media-background {
+  background-color: #000;
+}
+
+.vjs-video-canvas {
+  position: absolute;
+  float: left;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.load-video {
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  background-position: center;
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  position: absolute;
+  z-index: 1;
+}
+
+.stop-live-button {
+  position: absolute;
+  opacity: .8 !important;
+  top: 44% !important;
+}

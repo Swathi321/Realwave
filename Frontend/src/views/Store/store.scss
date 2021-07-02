@@ -1,0 +1,86 @@
+.weekDays{
+    position: relative;
+    // z-index: -9999;
+     width: 18px;
+     padding: 5px;
+    height: 18px;
+    margin:10px;
+    // display: block;
+  }
+
+  
+//   .emailList .anticon {
+//      color:#00000087 !important;
+//   }
+
+
+  .time-sty.anticon{
+     color: red !important ;
+
+  }
+
+
+.radioNodes{
+  color: #c8ced3 ;
+  font-size: 14px;
+}
+
+.cheader .card-header {
+  padding: 8px !important;
+}
+.theme-dark .form-control.disfont {
+  color:gray !important;
+}
+
+.ant-time-picker-icon, .ant-time-picker-clear {
+  position: absolute;
+    top: 50%;
+    right: 11px;
+    z-index: 0 !important; 
+    width: 14px;
+    height: 14px;
+    margin-top: -7px;
+    /* color: rgba(0, 0, 0, 0.25); */
+    line-height: 14px;
+    -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.serKey {
+  margin-left: -18px;
+  padding: 3px;
+  width: 352px;
+}
+.Rule4Color{
+  background-color: #0184a5;
+}
+// .OptionalRuleColor{
+//   background-color: #0184a5;
+// }
+.ruleColorBox{
+  min-width: 25px;
+  height: 32px;
+  margin-top: 5px!important;
+}
+.OptionalRuleText{
+  position: relative;
+  top: 12px;
+}
+.ClipCheckbox{
+	position: relative;
+  bottom: 2px;
+}
+.BookmarkCheckbox{
+	position: relative;
+	top: 3px;
+}
+.scaleRulesInputBox .playback_checkbox {
+  height: 14px;
+  width: 14px;
+}
+.ImageModalwidth{width:350px!important}
+.ImageModalML{margin-left: 14%;}

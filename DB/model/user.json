@@ -1,0 +1,16 @@
+{
+	"__v" : NumberInt(187),
+	"_id" : ObjectId("5be06a8ce0dfb3098455cbf2"),
+	"createdAt" : ISODate("2018-11-05T21:36:36.424+05:30"),
+	"email" : "admin@realwave.io",
+	"firstName" : "admin",
+	"gender" : "Male",
+	"lastName" : "admin",
+	"password" : "$2a$10$KDttKkB0dgsP02KIihuazuoJupjR0OJuSLSBSTcX/oPG8CT4D309q",
+	"roleId" : ObjectId("5c540eefb224473e50f12236"),
+	"status" : "Active",
+	"storeId" : [],
+	"theme" : "Dark",
+	"updatedAt" : ISODate("2020-02-13T12:55:12.007+05:30"),
+	"userRole" : "Admin"
+},

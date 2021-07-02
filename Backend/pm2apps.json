@@ -1,0 +1,25 @@
+{
+  "apps": [
+    {
+      "name": "realwave-dev",
+      "script": "app.js",
+      "instances": "8",
+      "exec_mode": "cluster",
+      "watch": true,
+      "ignore_watch": [
+        "logs",
+        "client",
+        "thumbnails",
+        "temp",
+        "storeLogs",
+        "ssh-keys",
+        "Images",
+        "assets"
+      ],
+      "env": {
+        "NODE_ENV": "production",
+        "NODE_OPTIONS": "--max-semi-space-size=256 --max-new-space-size=2048 --max-old-space-size=8192 "
+      }
+    }
+  ]
+}

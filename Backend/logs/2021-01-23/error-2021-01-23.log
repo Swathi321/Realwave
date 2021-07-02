@@ -1,0 +1,15 @@
+{
+  level: 'error',
+  message: 'AntMediaServer API Error: Site Mars - Camera  6',
+  timestamp: '2021-01-23T06:08:43.396Z'
+}
+{
+  level: 'error',
+  message: 'AntMediaServer API Error: Site Mars - Camera  6',
+  timestamp: '2021-01-23T06:28:11.406Z'
+}
+{
+  level: 'error',
+  message: 'AntMediaServer API Error: Site Mars - Camera 7',
+  timestamp: '2021-01-23T06:53:27.011Z'
+}

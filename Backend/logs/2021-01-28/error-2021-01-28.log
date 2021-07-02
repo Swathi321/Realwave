@@ -1,0 +1,40 @@
+{
+  level: 'error',
+  message: 'AntMediaServer API Error: India site test - Test Camera ecil',
+  timestamp: '2021-01-28T10:55:53.946Z'
+}
+{
+  level: 'error',
+  message: MongooseError [CastError]: Cast to ObjectId failed for value "CAM3" at path "_id" for model "smartDevice"
+      at new CastError (/home/ec2-user/new-realwave/realwave/Backend/node_modules/mongoose/lib/error/cast.js:29:11)
+      at model.Query.exec (/home/ec2-user/new-realwave/realwave/Backend/node_modules/mongoose/lib/query.js:4341:21)
+      at model.Query.Query.find (/home/ec2-user/new-realwave/realwave/Backend/node_modules/mongoose/lib/query.js:1992:8)
+      at Function.find (/home/ec2-user/new-realwave/realwave/Backend/node_modules/mongoose/lib/model.js:2083:13)
+      at /home/ec2-user/new-realwave/realwave/Backend/util/util.js:1343:14
+      at runMicrotasks (<anonymous>)
+      at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+    messageFormat: undefined,
+    stringValue: '"CAM3"',
+    kind: 'ObjectId',
+    value: 'CAM3',
+    path: '_id',
+    reason: Error: Argument passed in must be a single String of 12 bytes or a string of 24 hex characters
+        at new ObjectID (/home/ec2-user/new-realwave/realwave/Backend/node_modules/bson/lib/bson/objectid.js:59:11)
+        at castObjectId (/home/ec2-user/new-realwave/realwave/Backend/node_modules/mongoose/lib/cast/objectid.js:25:12)
+        at ObjectId.cast (/home/ec2-user/new-realwave/realwave/Backend/node_modules/mongoose/lib/schema/objectid.js:267:12)
+        at ObjectId.SchemaType.applySetters (/home/ec2-user/new-realwave/realwave/Backend/node_modules/mongoose/lib/schematype.js:1031:12)
+        at ObjectId.SchemaType._castForQuery (/home/ec2-user/new-realwave/realwave/Backend/node_modules/mongoose/lib/schematype.js:1459:15)
+        at ObjectId.SchemaType.castForQuery (/home/ec2-user/new-realwave/realwave/Backend/node_modules/mongoose/lib/schematype.js:1449:15)
+        at /home/ec2-user/new-realwave/realwave/Backend/node_modules/mongoose/lib/schematype.js:1398:18
+        at Array.map (<anonymous>)
+        at ObjectId.handle$in (/home/ec2-user/new-realwave/realwave/Backend/node_modules/mongoose/lib/schematype.js:1394:14)
+        at ObjectId.SchemaType.castForQuery (/home/ec2-user/new-realwave/realwave/Backend/node_modules/mongoose/lib/schematype.js:1446:20)
+        at ObjectId.SchemaType.castForQueryWrapper (/home/ec2-user/new-realwave/realwave/Backend/node_modules/mongoose/lib/schematype.js:1423:17)
+        at cast (/home/ec2-user/new-realwave/realwave/Backend/node_modules/mongoose/lib/cast.js:296:39)
+        at model.Query.Query.cast (/home/ec2-user/new-realwave/realwave/Backend/node_modules/mongoose/lib/query.js:4730:12)
+        at model.Query.Query._castConditions (/home/ec2-user/new-realwave/realwave/Backend/node_modules/mongoose/lib/query.js:1861:10)
+        at model.Query.<anonymous> (/home/ec2-user/new-realwave/realwave/Backend/node_modules/mongoose/lib/query.js:1888:8)
+        at model.Query._wrappedThunk [as _find] (/home/ec2-user/new-realwave/realwave/Backend/node_modules/mongoose/lib/helpers/query/wrapThunk.js:16:8)
+  },
+  timestamp: '2021-01-28T10:55:53.962Z'
+}

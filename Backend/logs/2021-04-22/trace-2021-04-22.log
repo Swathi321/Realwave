@@ -1,0 +1,1280 @@
+{
+  message: 'Daemon Server Started',
+  level: 'info',
+  timestamp: '2021-04-22T03:19:46.451Z'
+}
+{
+  message: 'Daemon Server Started',
+  level: 'info',
+  timestamp: '2021-04-22T04:39:04.642Z'
+}
+{
+  error: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+      at ServerResponse.setHeader (_http_outgoing.js:558:11)
+      at ServerResponse.header (D:\Work Files\12-4-2021\realwave\Backend\node_modules\express\lib\response.js:767:10)
+      at ServerResponse.send (D:\Work Files\12-4-2021\realwave\Backend\node_modules\express\lib\response.js:170:12)
+      at ServerResponse.json (D:\Work Files\12-4-2021\realwave\Backend\node_modules\express\lib\response.js:267:15)
+      at D:\Work Files\12-4-2021\realwave\Backend\controllers\user.js:189:15
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\model.js:4866:16
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\model.js:4866:16
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:16:11
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\model.js:4889:21
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\query.js:4392:18
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\query.js:4427:14
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\query.js:2082:14
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\model.js:4866:16
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:16:11
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\model.js:4889:21
+      at next (D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\model.js:4317:14) {
+    code: 'ERR_HTTP_HEADERS_SENT'
+  },
+  level: 'error',
+  message: 'uncaughtException: Cannot set headers after they are sent to the client\n' +
+    'Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n' +
+    '    at ServerResponse.setHeader (_http_outgoing.js:558:11)\n' +
+    '    at ServerResponse.header (D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\express\\lib\\response.js:767:10)\n' +
+    '    at ServerResponse.send (D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\express\\lib\\response.js:170:12)\n' +
+    '    at ServerResponse.json (D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\express\\lib\\response.js:267:15)\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\controllers\\user.js:189:15\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4866:16\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4866:16\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:16:11\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4889:21\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\query.js:4392:18\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\query.js:4427:14\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\query.js:2082:14\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4866:16\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:16:11\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4889:21\n' +
+    '    at next (D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4317:14)',
+  stack: 'Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n' +
+    '    at ServerResponse.setHeader (_http_outgoing.js:558:11)\n' +
+    '    at ServerResponse.header (D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\express\\lib\\response.js:767:10)\n' +
+    '    at ServerResponse.send (D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\express\\lib\\response.js:170:12)\n' +
+    '    at ServerResponse.json (D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\express\\lib\\response.js:267:15)\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\controllers\\user.js:189:15\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4866:16\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4866:16\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:16:11\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4889:21\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\query.js:4392:18\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\query.js:4427:14\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\query.js:2082:14\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4866:16\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:16:11\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4889:21\n' +
+    '    at next (D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4317:14)',
+  exception: true,
+  date: 'Thu Apr 22 2021 10:18:07 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 1696,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Work Files\\12-4-2021\\realwave\\Backend',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v14.16.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Work Files\\12-4-2021\\realwave\\Backend\\app.js'
+    ],
+    memoryUsage: {
+      rss: 115220480,
+      heapTotal: 58023936,
+      heapUsed: 55650800,
+      external: 22921241,
+      arrayBuffers: 21306516
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 47399 },
+  trace: [
+    {
+      column: 11,
+      file: '_http_outgoing.js',
+      function: 'ServerResponse.setHeader',
+      line: 558,
+      method: 'setHeader',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\express\\lib\\response.js',
+      function: 'ServerResponse.header',
+      line: 767,
+      method: 'header',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\express\\lib\\response.js',
+      function: 'ServerResponse.send',
+      line: 170,
+      method: 'send',
+      native: false
+    },
+    {
+      column: 15,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\express\\lib\\response.js',
+      function: 'ServerResponse.json',
+      line: 267,
+      method: 'json',
+      native: false
+    },
+    {
+      column: 15,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\controllers\\user.js',
+      function: null,
+      line: 189,
+      method: null,
+      native: false
+    },
+    {
+      column: 16,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4866,
+      method: null,
+      native: false
+    },
+    {
+      column: 16,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4866,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js',
+      function: null,
+      line: 16,
+      method: null,
+      native: false
+    },
+    {
+      column: 21,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4889,
+      method: null,
+      native: false
+    },
+    {
+      column: 18,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\query.js',
+      function: null,
+      line: 4392,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\query.js',
+      function: null,
+      line: 4427,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\query.js',
+      function: null,
+      line: 2082,
+      method: null,
+      native: false
+    },
+    {
+      column: 16,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4866,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js',
+      function: null,
+      line: 16,
+      method: null,
+      native: false
+    },
+    {
+      column: 21,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4889,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js',
+      function: 'next',
+      line: 4317,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2021-04-22T04:48:07.820Z'
+}
+{
+  error: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+      at ServerResponse.setHeader (_http_outgoing.js:558:11)
+      at ServerResponse.header (D:\Work Files\12-4-2021\realwave\Backend\node_modules\express\lib\response.js:767:10)
+      at ServerResponse.send (D:\Work Files\12-4-2021\realwave\Backend\node_modules\express\lib\response.js:170:12)
+      at ServerResponse.json (D:\Work Files\12-4-2021\realwave\Backend\node_modules\express\lib\response.js:267:15)
+      at D:\Work Files\12-4-2021\realwave\Backend\controllers\user.js:189:15
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\model.js:4866:16
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\model.js:4866:16
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:16:11
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\model.js:4889:21
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\query.js:4392:18
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\query.js:4427:14
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\query.js:2082:14
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\model.js:4866:16
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:16:11
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\model.js:4889:21
+      at next (D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\model.js:4317:14) {
+    code: 'ERR_HTTP_HEADERS_SENT'
+  },
+  level: 'error',
+  message: 'uncaughtException: Cannot set headers after they are sent to the client\n' +
+    'Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n' +
+    '    at ServerResponse.setHeader (_http_outgoing.js:558:11)\n' +
+    '    at ServerResponse.header (D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\express\\lib\\response.js:767:10)\n' +
+    '    at ServerResponse.send (D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\express\\lib\\response.js:170:12)\n' +
+    '    at ServerResponse.json (D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\express\\lib\\response.js:267:15)\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\controllers\\user.js:189:15\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4866:16\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4866:16\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:16:11\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4889:21\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\query.js:4392:18\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\query.js:4427:14\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\query.js:2082:14\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4866:16\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:16:11\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4889:21\n' +
+    '    at next (D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4317:14)',
+  stack: 'Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n' +
+    '    at ServerResponse.setHeader (_http_outgoing.js:558:11)\n' +
+    '    at ServerResponse.header (D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\express\\lib\\response.js:767:10)\n' +
+    '    at ServerResponse.send (D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\express\\lib\\response.js:170:12)\n' +
+    '    at ServerResponse.json (D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\express\\lib\\response.js:267:15)\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\controllers\\user.js:189:15\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4866:16\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4866:16\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:16:11\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4889:21\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\query.js:4392:18\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\query.js:4427:14\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\query.js:2082:14\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4866:16\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:16:11\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4889:21\n' +
+    '    at next (D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4317:14)',
+  exception: true,
+  date: 'Thu Apr 22 2021 10:18:07 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 1696,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Work Files\\12-4-2021\\realwave\\Backend',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v14.16.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Work Files\\12-4-2021\\realwave\\Backend\\app.js'
+    ],
+    memoryUsage: {
+      rss: 116244480,
+      heapTotal: 58023936,
+      heapUsed: 56015440,
+      external: 22936000,
+      arrayBuffers: 21306540
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 47399 },
+  trace: [
+    {
+      column: 11,
+      file: '_http_outgoing.js',
+      function: 'ServerResponse.setHeader',
+      line: 558,
+      method: 'setHeader',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\express\\lib\\response.js',
+      function: 'ServerResponse.header',
+      line: 767,
+      method: 'header',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\express\\lib\\response.js',
+      function: 'ServerResponse.send',
+      line: 170,
+      method: 'send',
+      native: false
+    },
+    {
+      column: 15,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\express\\lib\\response.js',
+      function: 'ServerResponse.json',
+      line: 267,
+      method: 'json',
+      native: false
+    },
+    {
+      column: 15,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\controllers\\user.js',
+      function: null,
+      line: 189,
+      method: null,
+      native: false
+    },
+    {
+      column: 16,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4866,
+      method: null,
+      native: false
+    },
+    {
+      column: 16,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4866,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js',
+      function: null,
+      line: 16,
+      method: null,
+      native: false
+    },
+    {
+      column: 21,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4889,
+      method: null,
+      native: false
+    },
+    {
+      column: 18,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\query.js',
+      function: null,
+      line: 4392,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\query.js',
+      function: null,
+      line: 4427,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\query.js',
+      function: null,
+      line: 2082,
+      method: null,
+      native: false
+    },
+    {
+      column: 16,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4866,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js',
+      function: null,
+      line: 16,
+      method: null,
+      native: false
+    },
+    {
+      column: 21,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4889,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js',
+      function: 'next',
+      line: 4317,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2021-04-22T04:48:07.875Z'
+}
+{
+  error: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+      at ServerResponse.setHeader (_http_outgoing.js:558:11)
+      at ServerResponse.header (D:\Work Files\12-4-2021\realwave\Backend\node_modules\express\lib\response.js:767:10)
+      at ServerResponse.send (D:\Work Files\12-4-2021\realwave\Backend\node_modules\express\lib\response.js:170:12)
+      at ServerResponse.json (D:\Work Files\12-4-2021\realwave\Backend\node_modules\express\lib\response.js:267:15)
+      at D:\Work Files\12-4-2021\realwave\Backend\controllers\user.js:189:15
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\model.js:4866:16
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\model.js:4866:16
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:16:11
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\model.js:4889:21
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\query.js:4392:18
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\query.js:4427:14
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\query.js:2082:14
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\model.js:4866:16
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:16:11
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\model.js:4889:21
+      at next (D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\model.js:4317:14) {
+    code: 'ERR_HTTP_HEADERS_SENT'
+  },
+  level: 'error',
+  message: 'uncaughtException: Cannot set headers after they are sent to the client\n' +
+    'Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n' +
+    '    at ServerResponse.setHeader (_http_outgoing.js:558:11)\n' +
+    '    at ServerResponse.header (D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\express\\lib\\response.js:767:10)\n' +
+    '    at ServerResponse.send (D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\express\\lib\\response.js:170:12)\n' +
+    '    at ServerResponse.json (D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\express\\lib\\response.js:267:15)\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\controllers\\user.js:189:15\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4866:16\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4866:16\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:16:11\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4889:21\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\query.js:4392:18\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\query.js:4427:14\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\query.js:2082:14\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4866:16\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:16:11\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4889:21\n' +
+    '    at next (D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4317:14)',
+  stack: 'Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n' +
+    '    at ServerResponse.setHeader (_http_outgoing.js:558:11)\n' +
+    '    at ServerResponse.header (D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\express\\lib\\response.js:767:10)\n' +
+    '    at ServerResponse.send (D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\express\\lib\\response.js:170:12)\n' +
+    '    at ServerResponse.json (D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\express\\lib\\response.js:267:15)\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\controllers\\user.js:189:15\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4866:16\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4866:16\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:16:11\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4889:21\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\query.js:4392:18\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\query.js:4427:14\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\query.js:2082:14\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4866:16\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:16:11\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4889:21\n' +
+    '    at next (D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4317:14)',
+  exception: true,
+  date: 'Thu Apr 22 2021 10:18:07 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 1696,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Work Files\\12-4-2021\\realwave\\Backend',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v14.16.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Work Files\\12-4-2021\\realwave\\Backend\\app.js'
+    ],
+    memoryUsage: {
+      rss: 116486144,
+      heapTotal: 58023936,
+      heapUsed: 56241992,
+      external: 22955330,
+      arrayBuffers: 21306540
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 47399 },
+  trace: [
+    {
+      column: 11,
+      file: '_http_outgoing.js',
+      function: 'ServerResponse.setHeader',
+      line: 558,
+      method: 'setHeader',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\express\\lib\\response.js',
+      function: 'ServerResponse.header',
+      line: 767,
+      method: 'header',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\express\\lib\\response.js',
+      function: 'ServerResponse.send',
+      line: 170,
+      method: 'send',
+      native: false
+    },
+    {
+      column: 15,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\express\\lib\\response.js',
+      function: 'ServerResponse.json',
+      line: 267,
+      method: 'json',
+      native: false
+    },
+    {
+      column: 15,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\controllers\\user.js',
+      function: null,
+      line: 189,
+      method: null,
+      native: false
+    },
+    {
+      column: 16,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4866,
+      method: null,
+      native: false
+    },
+    {
+      column: 16,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4866,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js',
+      function: null,
+      line: 16,
+      method: null,
+      native: false
+    },
+    {
+      column: 21,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4889,
+      method: null,
+      native: false
+    },
+    {
+      column: 18,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\query.js',
+      function: null,
+      line: 4392,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\query.js',
+      function: null,
+      line: 4427,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\query.js',
+      function: null,
+      line: 2082,
+      method: null,
+      native: false
+    },
+    {
+      column: 16,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4866,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js',
+      function: null,
+      line: 16,
+      method: null,
+      native: false
+    },
+    {
+      column: 21,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4889,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js',
+      function: 'next',
+      line: 4317,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2021-04-22T04:48:07.932Z'
+}
+{
+  error: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+      at ServerResponse.setHeader (_http_outgoing.js:558:11)
+      at ServerResponse.header (D:\Work Files\12-4-2021\realwave\Backend\node_modules\express\lib\response.js:767:10)
+      at ServerResponse.send (D:\Work Files\12-4-2021\realwave\Backend\node_modules\express\lib\response.js:170:12)
+      at ServerResponse.json (D:\Work Files\12-4-2021\realwave\Backend\node_modules\express\lib\response.js:267:15)
+      at D:\Work Files\12-4-2021\realwave\Backend\controllers\user.js:189:15
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\model.js:4866:16
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\model.js:4866:16
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:16:11
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\model.js:4889:21
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\query.js:4392:18
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\query.js:4427:14
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\query.js:2082:14
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\model.js:4866:16
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:16:11
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\model.js:4889:21
+      at next (D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\model.js:4317:14) {
+    code: 'ERR_HTTP_HEADERS_SENT'
+  },
+  level: 'error',
+  message: 'uncaughtException: Cannot set headers after they are sent to the client\n' +
+    'Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n' +
+    '    at ServerResponse.setHeader (_http_outgoing.js:558:11)\n' +
+    '    at ServerResponse.header (D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\express\\lib\\response.js:767:10)\n' +
+    '    at ServerResponse.send (D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\express\\lib\\response.js:170:12)\n' +
+    '    at ServerResponse.json (D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\express\\lib\\response.js:267:15)\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\controllers\\user.js:189:15\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4866:16\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4866:16\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:16:11\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4889:21\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\query.js:4392:18\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\query.js:4427:14\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\query.js:2082:14\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4866:16\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:16:11\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4889:21\n' +
+    '    at next (D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4317:14)',
+  stack: 'Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n' +
+    '    at ServerResponse.setHeader (_http_outgoing.js:558:11)\n' +
+    '    at ServerResponse.header (D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\express\\lib\\response.js:767:10)\n' +
+    '    at ServerResponse.send (D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\express\\lib\\response.js:170:12)\n' +
+    '    at ServerResponse.json (D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\express\\lib\\response.js:267:15)\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\controllers\\user.js:189:15\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4866:16\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4866:16\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:16:11\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4889:21\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\query.js:4392:18\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\query.js:4427:14\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\query.js:2082:14\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4866:16\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:16:11\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4889:21\n' +
+    '    at next (D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4317:14)',
+  exception: true,
+  date: 'Thu Apr 22 2021 10:18:07 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 1696,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Work Files\\12-4-2021\\realwave\\Backend',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v14.16.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Work Files\\12-4-2021\\realwave\\Backend\\app.js'
+    ],
+    memoryUsage: {
+      rss: 117469184,
+      heapTotal: 58023936,
+      heapUsed: 56443136,
+      external: 22974660,
+      arrayBuffers: 21306540
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 47399 },
+  trace: [
+    {
+      column: 11,
+      file: '_http_outgoing.js',
+      function: 'ServerResponse.setHeader',
+      line: 558,
+      method: 'setHeader',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\express\\lib\\response.js',
+      function: 'ServerResponse.header',
+      line: 767,
+      method: 'header',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\express\\lib\\response.js',
+      function: 'ServerResponse.send',
+      line: 170,
+      method: 'send',
+      native: false
+    },
+    {
+      column: 15,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\express\\lib\\response.js',
+      function: 'ServerResponse.json',
+      line: 267,
+      method: 'json',
+      native: false
+    },
+    {
+      column: 15,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\controllers\\user.js',
+      function: null,
+      line: 189,
+      method: null,
+      native: false
+    },
+    {
+      column: 16,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4866,
+      method: null,
+      native: false
+    },
+    {
+      column: 16,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4866,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js',
+      function: null,
+      line: 16,
+      method: null,
+      native: false
+    },
+    {
+      column: 21,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4889,
+      method: null,
+      native: false
+    },
+    {
+      column: 18,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\query.js',
+      function: null,
+      line: 4392,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\query.js',
+      function: null,
+      line: 4427,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\query.js',
+      function: null,
+      line: 2082,
+      method: null,
+      native: false
+    },
+    {
+      column: 16,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4866,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js',
+      function: null,
+      line: 16,
+      method: null,
+      native: false
+    },
+    {
+      column: 21,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4889,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js',
+      function: 'next',
+      line: 4317,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2021-04-22T04:48:07.980Z'
+}
+{
+  error: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+      at ServerResponse.setHeader (_http_outgoing.js:558:11)
+      at ServerResponse.header (D:\Work Files\12-4-2021\realwave\Backend\node_modules\express\lib\response.js:767:10)
+      at ServerResponse.send (D:\Work Files\12-4-2021\realwave\Backend\node_modules\express\lib\response.js:170:12)
+      at ServerResponse.json (D:\Work Files\12-4-2021\realwave\Backend\node_modules\express\lib\response.js:267:15)
+      at D:\Work Files\12-4-2021\realwave\Backend\controllers\user.js:189:15
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\model.js:4866:16
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\model.js:4866:16
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:16:11
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\model.js:4889:21
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\query.js:4392:18
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\query.js:4427:14
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\query.js:2082:14
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\model.js:4866:16
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:16:11
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\model.js:4889:21
+      at next (D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\model.js:4317:14) {
+    code: 'ERR_HTTP_HEADERS_SENT'
+  },
+  level: 'error',
+  message: 'uncaughtException: Cannot set headers after they are sent to the client\n' +
+    'Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n' +
+    '    at ServerResponse.setHeader (_http_outgoing.js:558:11)\n' +
+    '    at ServerResponse.header (D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\express\\lib\\response.js:767:10)\n' +
+    '    at ServerResponse.send (D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\express\\lib\\response.js:170:12)\n' +
+    '    at ServerResponse.json (D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\express\\lib\\response.js:267:15)\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\controllers\\user.js:189:15\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4866:16\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4866:16\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:16:11\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4889:21\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\query.js:4392:18\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\query.js:4427:14\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\query.js:2082:14\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4866:16\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:16:11\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4889:21\n' +
+    '    at next (D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4317:14)',
+  stack: 'Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n' +
+    '    at ServerResponse.setHeader (_http_outgoing.js:558:11)\n' +
+    '    at ServerResponse.header (D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\express\\lib\\response.js:767:10)\n' +
+    '    at ServerResponse.send (D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\express\\lib\\response.js:170:12)\n' +
+    '    at ServerResponse.json (D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\express\\lib\\response.js:267:15)\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\controllers\\user.js:189:15\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4866:16\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4866:16\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:16:11\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4889:21\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\query.js:4392:18\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\query.js:4427:14\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\query.js:2082:14\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4866:16\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:16:11\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4889:21\n' +
+    '    at next (D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4317:14)',
+  exception: true,
+  date: 'Thu Apr 22 2021 10:18:08 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 1696,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Work Files\\12-4-2021\\realwave\\Backend',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v14.16.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Work Files\\12-4-2021\\realwave\\Backend\\app.js'
+    ],
+    memoryUsage: {
+      rss: 116895744,
+      heapTotal: 58286080,
+      heapUsed: 55843104,
+      external: 22992253,
+      arrayBuffers: 21304803
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 47399 },
+  trace: [
+    {
+      column: 11,
+      file: '_http_outgoing.js',
+      function: 'ServerResponse.setHeader',
+      line: 558,
+      method: 'setHeader',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\express\\lib\\response.js',
+      function: 'ServerResponse.header',
+      line: 767,
+      method: 'header',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\express\\lib\\response.js',
+      function: 'ServerResponse.send',
+      line: 170,
+      method: 'send',
+      native: false
+    },
+    {
+      column: 15,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\express\\lib\\response.js',
+      function: 'ServerResponse.json',
+      line: 267,
+      method: 'json',
+      native: false
+    },
+    {
+      column: 15,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\controllers\\user.js',
+      function: null,
+      line: 189,
+      method: null,
+      native: false
+    },
+    {
+      column: 16,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4866,
+      method: null,
+      native: false
+    },
+    {
+      column: 16,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4866,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js',
+      function: null,
+      line: 16,
+      method: null,
+      native: false
+    },
+    {
+      column: 21,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4889,
+      method: null,
+      native: false
+    },
+    {
+      column: 18,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\query.js',
+      function: null,
+      line: 4392,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\query.js',
+      function: null,
+      line: 4427,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\query.js',
+      function: null,
+      line: 2082,
+      method: null,
+      native: false
+    },
+    {
+      column: 16,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4866,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js',
+      function: null,
+      line: 16,
+      method: null,
+      native: false
+    },
+    {
+      column: 21,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4889,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js',
+      function: 'next',
+      line: 4317,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2021-04-22T04:48:08.035Z'
+}
+{
+  error: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+      at ServerResponse.setHeader (_http_outgoing.js:558:11)
+      at ServerResponse.header (D:\Work Files\12-4-2021\realwave\Backend\node_modules\express\lib\response.js:767:10)
+      at ServerResponse.send (D:\Work Files\12-4-2021\realwave\Backend\node_modules\express\lib\response.js:170:12)
+      at ServerResponse.json (D:\Work Files\12-4-2021\realwave\Backend\node_modules\express\lib\response.js:267:15)
+      at D:\Work Files\12-4-2021\realwave\Backend\controllers\user.js:189:15
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\model.js:4866:16
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\model.js:4866:16
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:16:11
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\model.js:4889:21
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\query.js:4392:18
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\query.js:4427:14
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\query.js:2082:14
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\model.js:4866:16
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:16:11
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\model.js:4889:21
+      at next (D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\model.js:4317:14) {
+    code: 'ERR_HTTP_HEADERS_SENT'
+  },
+  level: 'error',
+  message: 'uncaughtException: Cannot set headers after they are sent to the client\n' +
+    'Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n' +
+    '    at ServerResponse.setHeader (_http_outgoing.js:558:11)\n' +
+    '    at ServerResponse.header (D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\express\\lib\\response.js:767:10)\n' +
+    '    at ServerResponse.send (D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\express\\lib\\response.js:170:12)\n' +
+    '    at ServerResponse.json (D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\express\\lib\\response.js:267:15)\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\controllers\\user.js:189:15\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4866:16\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4866:16\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:16:11\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4889:21\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\query.js:4392:18\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\query.js:4427:14\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\query.js:2082:14\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4866:16\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:16:11\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4889:21\n' +
+    '    at next (D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4317:14)',
+  stack: 'Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n' +
+    '    at ServerResponse.setHeader (_http_outgoing.js:558:11)\n' +
+    '    at ServerResponse.header (D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\express\\lib\\response.js:767:10)\n' +
+    '    at ServerResponse.send (D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\express\\lib\\response.js:170:12)\n' +
+    '    at ServerResponse.json (D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\express\\lib\\response.js:267:15)\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\controllers\\user.js:189:15\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4866:16\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4866:16\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:16:11\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4889:21\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\query.js:4392:18\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\query.js:4427:14\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\query.js:2082:14\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4866:16\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:16:11\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4889:21\n' +
+    '    at next (D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4317:14)',
+  exception: true,
+  date: 'Thu Apr 22 2021 10:18:08 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 1696,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Work Files\\12-4-2021\\realwave\\Backend',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v14.16.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Work Files\\12-4-2021\\realwave\\Backend\\app.js'
+    ],
+    memoryUsage: {
+      rss: 117088256,
+      heapTotal: 58286080,
+      heapUsed: 56036248,
+      external: 23011583,
+      arrayBuffers: 21304803
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 47399 },
+  trace: [
+    {
+      column: 11,
+      file: '_http_outgoing.js',
+      function: 'ServerResponse.setHeader',
+      line: 558,
+      method: 'setHeader',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\express\\lib\\response.js',
+      function: 'ServerResponse.header',
+      line: 767,
+      method: 'header',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\express\\lib\\response.js',
+      function: 'ServerResponse.send',
+      line: 170,
+      method: 'send',
+      native: false
+    },
+    {
+      column: 15,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\express\\lib\\response.js',
+      function: 'ServerResponse.json',
+      line: 267,
+      method: 'json',
+      native: false
+    },
+    {
+      column: 15,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\controllers\\user.js',
+      function: null,
+      line: 189,
+      method: null,
+      native: false
+    },
+    {
+      column: 16,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4866,
+      method: null,
+      native: false
+    },
+    {
+      column: 16,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4866,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js',
+      function: null,
+      line: 16,
+      method: null,
+      native: false
+    },
+    {
+      column: 21,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4889,
+      method: null,
+      native: false
+    },
+    {
+      column: 18,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\query.js',
+      function: null,
+      line: 4392,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\query.js',
+      function: null,
+      line: 4427,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\query.js',
+      function: null,
+      line: 2082,
+      method: null,
+      native: false
+    },
+    {
+      column: 16,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4866,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js',
+      function: null,
+      line: 16,
+      method: null,
+      native: false
+    },
+    {
+      column: 21,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4889,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js',
+      function: 'next',
+      line: 4317,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2021-04-22T04:48:08.069Z'
+}
+{
+  message: 'Daemon Server Started',
+  level: 'info',
+  timestamp: '2021-04-22T04:51:13.323Z'
+}
+{
+  message: 'Daemon Server Started',
+  level: 'info',
+  timestamp: '2021-04-22T05:13:55.233Z'
+}

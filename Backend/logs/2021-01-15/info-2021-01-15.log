@@ -1,0 +1,10 @@
+{
+  level: 'info',
+  message: 'Daemon Server Started',
+  timestamp: '2021-01-15T05:16:50.203Z'
+}
+{
+  level: 'info',
+  message: 'Daemon Server Started',
+  timestamp: '2021-01-15T14:02:46.272Z'
+}

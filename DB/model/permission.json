@@ -1,0 +1,192 @@
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5c5414ca9f2b541dd0fbae1e"),
+	"createdAt" : ISODate("2019-02-04T16:17:14.486+05:30"),
+	"description" : "Dashboard",
+	"name" : "Dashboard",
+	"updatedAt" : ISODate("2019-02-04T16:17:14.486+05:30")
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5c5414ca9f2b541dd0fbae1f"),
+	"createdAt" : ISODate("2019-02-04T16:17:14.486+05:30"),
+	"description" : "Video",
+	"name" : "Video",
+	"updatedAt" : ISODate("2019-02-04T16:17:14.486+05:30")
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5c5414ca9f2b541dd0fbae20"),
+	"createdAt" : ISODate("2019-02-04T16:17:14.487+05:30"),
+	"description" : "Events",
+	"name" : "Events",
+	"updatedAt" : ISODate("2019-02-04T16:17:14.487+05:30")
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5c5414ca9f2b541dd0fbae21"),
+	"createdAt" : ISODate("2019-02-04T16:17:14.487+05:30"),
+	"description" : "Point of Sale",
+	"name" : "Point of Sale",
+	"updatedAt" : ISODate("2019-02-04T16:17:14.487+05:30")
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5c5414ca9f2b541dd0fbae22"),
+	"createdAt" : ISODate("2019-02-04T16:17:14.487+05:30"),
+	"description" : "Safe",
+	"name" : "Safe",
+	"updatedAt" : ISODate("2019-02-04T16:17:14.487+05:30")
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5c5414ca9f2b541dd0fbae23"),
+	"createdAt" : ISODate("2019-02-04T16:17:14.487+05:30"),
+	"description" : "Alarm",
+	"name" : "Alarm",
+	"updatedAt" : ISODate("2019-02-04T16:17:14.487+05:30")
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5c5414ca9f2b541dd0fbae24"),
+	"createdAt" : ISODate("2019-02-04T16:17:14.487+05:30"),
+	"description" : "Temperature",
+	"name" : "Temperature",
+	"updatedAt" : ISODate("2019-02-04T16:17:14.487+05:30")
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5c5414ca9f2b541dd0fbae25"),
+	"createdAt" : ISODate("2019-02-04T16:17:14.487+05:30"),
+	"description" : "Health",
+	"name" : "Health",
+	"updatedAt" : ISODate("2019-02-04T16:17:14.487+05:30")
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5c5414ca9f2b541dd0fbae26"),
+	"createdAt" : ISODate("2019-02-04T16:17:14.487+05:30"),
+	"description" : "Other",
+	"name" : "Other",
+	"updatedAt" : ISODate("2019-02-04T16:17:14.487+05:30")
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5c5414ca9f2b541dd0fbae27"),
+	"createdAt" : ISODate("2019-02-04T16:17:14.487+05:30"),
+	"description" : "Analysis",
+	"name" : "Analysis",
+	"updatedAt" : ISODate("2019-02-04T16:17:14.487+05:30")
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5c5414ca9f2b541dd0fbae28"),
+	"createdAt" : ISODate("2019-02-04T16:17:14.487+05:30"),
+	"description" : "Admin",
+	"name" : "Admin",
+	"updatedAt" : ISODate("2019-02-04T16:17:14.487+05:30")
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5c5414ca9f2b541dd0fbae29"),
+	"createdAt" : ISODate("2019-02-04T16:17:14.487+05:30"),
+	"description" : "Timeline",
+	"name" : "Timeline",
+	"updatedAt" : ISODate("2019-02-04T16:17:14.487+05:30")
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5c5818327a0dd941e0266a1b"),
+	"createdAt" : ISODate("2019-02-04T16:17:14.487+05:30"),
+	"description" : "Users",
+	"name" : "Users",
+	"updatedAt" : ISODate("2019-02-04T16:17:14.487+05:30")
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5c5818327a0dd941e0266a1c"),
+	"createdAt" : ISODate("2019-02-04T16:17:14.487+05:30"),
+	"description" : "Sites",
+	"name" : "Sites",
+	"updatedAt" : ISODate("2019-02-04T16:17:14.487+05:30")
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5c5818327a0dd941e0266a1d"),
+	"createdAt" : ISODate("2019-02-04T16:17:14.487+05:30"),
+	"description" : "Roles",
+	"name" : "Roles",
+	"updatedAt" : ISODate("2019-02-04T16:17:14.487+05:30")
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5c5818327a0dd941e0266a1e"),
+	"createdAt" : ISODate("2019-02-04T16:17:14.487+05:30"),
+	"description" : "Clients",
+	"name" : "Clients",
+	"updatedAt" : ISODate("2019-02-04T16:17:14.487+05:30")
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5c5818327a0dd941e0266a1f"),
+	"createdAt" : ISODate("2019-02-04T16:17:14.487+05:30"),
+	"description" : "Site Logs",
+	"name" : "Site Logs",
+	"updatedAt" : ISODate("2019-02-04T16:17:14.487+05:30")
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5c5818327a0dd941e0266a20"),
+	"createdAt" : ISODate("2019-02-04T16:17:14.487+05:30"),
+	"description" : "Activity Logs",
+	"name" : "Activity Logs",
+	"updatedAt" : ISODate("2019-02-04T16:17:14.487+05:30")
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5c5818327a0dd941e0266a21"),
+	"createdAt" : ISODate("2019-02-04T16:17:14.487+05:30"),
+	"description" : "User Faces",
+	"name" : "User Faces",
+	"updatedAt" : ISODate("2019-02-04T16:17:14.487+05:30")
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5c6a6f97a1602e2ac8b8ef65"),
+	"createdAt" : ISODate("2019-02-04T16:17:14.487+05:30"),
+	"description" : "Face Events",
+	"name" : "Face Events",
+	"updatedAt" : ISODate("2019-02-04T16:17:14.487+05:30")
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5c8201643d6da02c48adc5fe"),
+	"createdAt" : ISODate("2019-03-08T11:19:25.213+05:30"),
+	"description" : "Map View",
+	"name" : "Map View",
+	"updatedAt" : ISODate("2019-03-08T11:19:25.213+05:30")
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5c8201643d6da02c48adc5ff"),
+	"createdAt" : ISODate("2019-03-08T11:19:03.080+05:30"),
+	"description" : "Promotions",
+	"name" : "Promotions",
+	"updatedAt" : ISODate("2019-03-08T11:19:03.080+05:30")
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5c8b4b253caf2f1db429fc21"),
+	"createdAt" : ISODate("2019-03-15T12:20:13.757+05:30"),
+	"description" : "Logs",
+	"name" : "Logs",
+	"updatedAt" : ISODate("2019-03-15T12:20:13.757+05:30")
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5c9105f812ec34293c73859f"),
+	"createdAt" : ISODate("2019-03-19T20:42:20.087+05:30"),
+	"description" : "Reports",
+	"name" : "Reports",
+	"updatedAt" : ISODate("2019-03-19T20:42:20.087+05:30")
+},

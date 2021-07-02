@@ -1,0 +1,81 @@
+.react-grid-HeaderCell {
+  background: #f9f9f9 !important;
+  padding: 8px !important;
+  font-weight: 700 !important;
+  border-right: 1px solid #ddd !important;
+  border-bottom: 1px solid #ddd !important;
+  text-align: center !important;
+}
+
+.display-no-of-record {
+  color: lightgray;
+}
+
+.display {
+  color: #4C667C;
+}
+
+@media screen and (max-width: 1366px) {
+  .display {
+    color: #4C667C;
+    padding-left: 2em;
+    float: right;
+  }
+}
+
+@media screen and (min-width: 1367px) and (max-width: 1920px) {
+  .display {
+    color: #4C667C;
+    padding-left: 3em;
+    float: right;
+  }
+}
+
+.react-grid-HeaderRow {
+  overflow: hidden !important;
+}
+
+ant-table td {
+  white-space: nowrap;
+}
+
+.custom-filter-dropdown {
+  padding: 8px;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, .2);
+}
+
+.custom-filter-dropdown input {
+  width: 130px;
+  margin-right: 8px;
+}
+
+.custom-filter-dropdown button {
+  margin-right: 8px;
+}
+
+.highlight {
+  color: #f50;
+}
+
+.react-resizable {
+  position: relative;
+}
+
+.react-resizable-handle {
+  position: absolute;
+  width: 10px;
+  height: 100%;
+  bottom: 0;
+  right: -5px;
+  cursor: col-resize;
+}
+.ant-table-header{
+  padding-bottom: 10px !important;
+  // margin-bottom: -12px !important;
+}
+
+.ant-table-small > .ant-table-content .ant-table-header {
+  background: transparent!important;
+}

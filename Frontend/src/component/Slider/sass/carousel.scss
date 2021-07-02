@@ -1,0 +1,32 @@
+.carousel-slides-wrapper {
+	display:flex;
+	flex-wrap:nowrap;
+	// overflow-x: hidden;
+	position:relative;
+}
+
+.carousel-animator {
+	display:flex;
+	transform: translate3d(0,0,0);
+	will-change: transform;
+}
+
+.right-slide-change-button{
+	align-self: center;
+	z-index: 1;
+	right: 0;
+	position: absolute;
+	top: 51%;
+}
+
+.left-slide-change-button{
+	align-self: center;
+	z-index: 1;
+	left: 0;
+	position: absolute;
+	top: 51%;
+}
+
+.arrow-img{
+	max-height: 3em;
+}

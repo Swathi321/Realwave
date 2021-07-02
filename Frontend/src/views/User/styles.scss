@@ -1,0 +1,150 @@
+.text-field {
+  position: relative;
+  margin: 2px 2.5px 10px 2.5px;
+  padding: 2px;
+}
+
+.text-form:focus {
+  // background-color: white;
+}
+
+.text-label {
+  color: #999;
+  position: absolute;
+  pointer-events: none;
+  font-size: small;
+  font-weight: normal;
+  left: 10px;
+  transition: 0.2s;
+  top: 10px;
+}
+
+.text-form:focus ~ label,
+.text-form:valid ~ label {
+  top: -8px;
+  left: 15px;
+  font-size: 10px;
+  color: black;
+  background-color:#fff;
+  // padding:2px 5px;
+  padding:2px 2px;
+  font-size:10px;
+  font-weight:normal;  /* padding: 0 5px 0 5px; */
+}
+
+
+
+.fixed-label{
+  position:absolute;
+  left:11px;
+  top:-5px;
+  background-color:#fff;
+  padding:2px 2px;
+  // padding:2px 5px;
+  font-size:10px;
+  font-weight:normal;
+}
+
+
+
+
+// toggle
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 26  px;
+}
+
+.switch .toggle {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.toggle:checked + .slider {
+  background-color: #2196F3;
+}
+
+.toggle:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+.toggle:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.ant-tree li .ant-tree-node-content-wrapper {
+  color: white !important;
+}
+.ant-tree li .ant-tree-node-content-wrapper :hover {
+  color:black !important;
+}
+
+.ant-select-selection__rendered {
+  // color: black !important;
+}
+.errorMsg{
+  font-size: 9px;
+}
+
+.userFormHeight{
+  overflow-y: scroll;
+  height: 42.5em;
+}
+.badgeCross:hover{
+  color: lightcoral;
+}
+.mt7{
+  margin-top: 7px;
+}
+
+.notification-queue-cont {
+    width: 25em ;
+}
+.notification-queue-cont p {
+ color: #fff !important;
+}
+
+.notification-detail {
+  font-weight: bold;
+}
+
+.NotificationAvailable {
+  color: yellow;
+}

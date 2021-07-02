@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Realwave">
+  <meta http-equiv="Cache-control" content="no-cache, no-store, must-revalidate">
+  <meta name="google-site-verification" content="6-FouZm_-SLI7gaaOyowqTHk-4a369TY7jSXacsezcQ" />
+  <title>Realwave</title>
+  <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+
+  <link href="js/videojs/video-js.css" rel="stylesheet">
+  <script src="./js/NodePlayer.min.js"></script>
+  <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+  <script src="js/videojs/video.js"></script>
+  <script type="text/javascript" src="js/three.js"></script>
+  <script type="text/javascript" src="js/videojs/videojs-panorama.min.js"></script>
+
+  <script type="text/javascript" src="js/videojs/videojs.thumbnails.js"></script>
+  <link rel="stylesheet" href="js/videojs/videojs.thumbnails.css" />
+  <link rel="stylesheet" href="js/videojs/videojs-overlay.css" />
+  <script src="js/videojs/videojs-overlay.js"></script>
+  <!-- <script src="js/vis.min.js"></script>
+  <link rel="stylesheet" href="js/vis.min.css" /> -->
+
+  <!-- Timeline -->
+  <script src="js/timeline/vis-timeline-graph2d.min.js"></script>
+  <link rel="stylesheet" href="js/timeline/vis-timeline-graph2d.min.css" />
+  <script>isHostedApp = false; </script>
+  <script>
+    function setHostedApp() {
+      isHostedApp = true;
+    }
+  </script>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAiOjJoFxTmd8UWwfE_nwMSsKdGH6TWoVk&libraries=places"
+    async defer></script>
+  <script
+    src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"> </script>
+  <script src="js/oms.js"></script>
+  <link href="js/2090551770be22b09600a40b0b4673b7?family=Avenir+Medium" rel="stylesheet"
+    type="text/css" />
+  <!--------------font awesome------------>
+  <link rel="stylesheet" href="js/fontawesome/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <!--------------bootstrap css----------------->
+  <link rel="stylesheet" href="js/bootstrap/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Recommended shim for cross-browser WebRTC support. -->
+  <script src="./js/red5pro-sdk.min.js"></script>
+  <script src="./js/webrtc/adapter-latest.js"></script>
+  <script src="./js/webrtc_adaptor.js"></script>
+
+  <script src="./js/vconsole.min.js"></script>
+
+</head>
+
+<body class="header-fixed sidebar-fixed sidebar-minimized brand-minimized sidebar-lg-show sidebar-show">
+  <noscript>
+    You need to enable JavaScript to run this app.
+  </noscript>
+
+  <div id="root"></div>
+
+</body>
+
+</html>

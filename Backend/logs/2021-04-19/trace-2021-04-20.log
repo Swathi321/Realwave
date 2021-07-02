@@ -1,0 +1,142 @@
+{
+  error: TypeError: Cannot convert undefined or null to object
+      at Function.assign (<anonymous>)
+      at Object.updateRecord (D:\Work Files\12-4-2021\realwave\Backend\controllers\restHandler.js:69:14)
+      at D:\Work Files\12-4-2021\realwave\Backend\controllers\restHandler.js:394:16
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\model.js:4866:16
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\model.js:4866:16
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:24:16
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\model.js:4889:21
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\mongoose\lib\query.js:4400:11
+      at D:\Work Files\12-4-2021\realwave\Backend\node_modules\kareem\index.js:136:16
+      at processTicksAndRejections (internal/process/task_queues.js:75:11),
+  level: 'error',
+  message: 'uncaughtException: Cannot convert undefined or null to object\n' +
+    'TypeError: Cannot convert undefined or null to object\n' +
+    '    at Function.assign (<anonymous>)\n' +
+    '    at Object.updateRecord (D:\\Work Files\\12-4-2021\\realwave\\Backend\\controllers\\restHandler.js:69:14)\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\controllers\\restHandler.js:394:16\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4866:16\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4866:16\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:24:16\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4889:21\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\query.js:4400:11\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\kareem\\index.js:136:16\n' +
+    '    at processTicksAndRejections (internal/process/task_queues.js:75:11)',
+  stack: 'TypeError: Cannot convert undefined or null to object\n' +
+    '    at Function.assign (<anonymous>)\n' +
+    '    at Object.updateRecord (D:\\Work Files\\12-4-2021\\realwave\\Backend\\controllers\\restHandler.js:69:14)\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\controllers\\restHandler.js:394:16\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4866:16\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4866:16\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:24:16\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js:4889:21\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\query.js:4400:11\n' +
+    '    at D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\kareem\\index.js:136:16\n' +
+    '    at processTicksAndRejections (internal/process/task_queues.js:75:11)',
+  exception: true,
+  date: 'Tue Apr 20 2021 18:30:42 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 17736,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Work Files\\12-4-2021\\realwave\\Backend',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v14.16.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Work Files\\12-4-2021\\realwave\\Backend\\app.js'
+    ],
+    memoryUsage: {
+      rss: 97894400,
+      heapTotal: 77545472,
+      heapUsed: 54341104,
+      external: 22974305,
+      arrayBuffers: 21245314
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 196214 },
+  trace: [
+    {
+      column: null,
+      file: null,
+      function: 'Function.assign',
+      line: null,
+      method: 'assign',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\controllers\\restHandler.js',
+      function: 'Object.updateRecord',
+      line: 69,
+      method: 'updateRecord',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\controllers\\restHandler.js',
+      function: null,
+      line: 394,
+      method: null,
+      native: false
+    },
+    {
+      column: 16,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4866,
+      method: null,
+      native: false
+    },
+    {
+      column: 16,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4866,
+      method: null,
+      native: false
+    },
+    {
+      column: 16,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js',
+      function: null,
+      line: 24,
+      method: null,
+      native: false
+    },
+    {
+      column: 21,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4889,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\mongoose\\lib\\query.js',
+      function: null,
+      line: 4400,
+      method: null,
+      native: false
+    },
+    {
+      column: 16,
+      file: 'D:\\Work Files\\12-4-2021\\realwave\\Backend\\node_modules\\kareem\\index.js',
+      function: null,
+      line: 136,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'internal/process/task_queues.js',
+      function: 'processTicksAndRejections',
+      line: 75,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2021-04-20T13:00:42.464Z'
+}

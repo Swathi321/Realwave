@@ -1,0 +1,70 @@
+{
+    "tasks": [
+        {
+            "label": "Check previous version",
+            "type": "checkPreviousVersion",
+            "arguments": {
+                "versionFile": "~installPath~/version.json",
+                "versionToken": "version"
+            }
+        },
+        {
+            "label": "Download update",
+            "type": "downloadUpdate",
+            "arguments": {
+                "fileName": "~upgradePath~/~newVersion~.zip",
+                "target": "~installPath~/Update/~newVersion~.zip"
+            }
+        },
+		{
+            "label": "App Stop",
+            "type": "cmd",
+            "run": "sudo systemctl stop realwave"
+        },
+        {
+            "label": "Application Backup",
+            "type": "cmd",
+            "run": "sudo 7z a ~installPath~Backups/~oldVersion~.zip ~installPath~/realwave_onsite"
+        },
+        {
+            "label": "Upgrade App",
+            "type": "cmd",
+            "run": "sudo 7z x ~installPath~/Update/~newVersion~.zip -aoa -o~installPath~",
+            "rollback": [
+                "Restore App"
+            ]
+        },
+		{
+            "label": "OSS Directory Give Permission as RWX",
+            "type": "cmd",
+            "run": "sudo chmod -R 777 /usr/OSS"
+        },
+        {
+            "label": "Start App",
+            "type": "cmd",
+            "run": "sudo systemctl start realwave"
+        },
+		{
+            "label": "Update Version File",
+            "type": "cmd",
+            "run": "curl http://192.168.2.128/oss/version.json -o /usr/OSS/version.json"
+        }
+    ],
+    "rollback": [
+        {
+            "label": "Restore App",
+            "type": "cmd",
+            "run": "sudo 7z x ~installPath~/Backups/~oldVersion~.zip -aoa -o~installPath~"
+        }
+    ],
+      "updateConfig": [
+        {
+            "remove": [
+               
+            ],
+            "add": [
+               
+            ]
+        }
+    ]
+}

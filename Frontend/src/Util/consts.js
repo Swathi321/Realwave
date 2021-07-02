@@ -1,0 +1,126 @@
+module.exports = {
+	Status: {
+		Active: 'Active',
+		Inactive: 'Inactive'
+	},
+	PEOPLE_COUNT_ACTION: {
+		HOURLY: 'HOURLY',
+		DAILY: 'DAILY',
+		WEEKLY: 'WEEKLY',
+		GRID: 'GRID'
+	},
+	CameraRecodingOption: [
+		{ value: true, label: 'Start Recording' },
+		{ value: false, label: 'Stop Recording' },
+	],
+	cameraBrandOptions: [
+		{ value: 'None', label: 'None' },
+		{ value: 'Realwave', label: 'Realwave' },
+		{ value: 'Flexwatch', label: 'Flexwatch' },
+		{ value: 'Axis', label: 'Axis' },
+		{ value: 'Panasonic', label: 'Panasonic' },
+		{ value: 'Toshiba', label: 'Toshiba' },
+		{ value: 'VivoTek', label: 'Vivo Tek' },
+		{ value: 'Hanwha', label: 'Hanwha' },
+		{ value: 'AndroidIpWebCam', label: 'Android Ip Web Cam' },
+		{ value: 'Wisenet', label: 'Wisenet' },
+		{ value: 'NVR', label: 'Nvr' },
+		{ value: 'REX', label: 'Rex' },
+	],
+	protocolTypeOptions: [
+		{ value: 'TCP', label: 'TCP' },
+		{ value: 'UDP', label: 'UDP' },
+	],
+	DateTimeFormat: {
+		Date: 'YYYY-MM-DD',
+		HourAMPM: 'h:mma',
+		Hour: 'ha'
+	},
+	DefaultVideoDate: 14,
+	Theme: {
+		'Dark': 'Dark',
+		'Dark2': 'Dark2',
+		'Light': 'Light',
+		'Bacardi': 'Bacardi',
+		'Coca-Cola': 'CocaCola',
+		'Starbucks': 'Starbucks',
+		'Snow-White': 'SnowWhite',
+		'Hanwha': 'Hanwha',
+		'Geutebruck': 'Geutebruck'
+	},
+	Comment: {
+		EnterComment: 'Please enter your comment',
+		RateComment: 'Please rate this event.'
+	},
+	TemperatureErrorMessage: 'Temperature API Error',
+	ConfirmationTitle: 'Are you sure?',
+	DeleteMessage: 'Once deleted, you will not be able to recover this site',
+	SaveLayout: 'Save Layout',
+	AddWidgets: 'Add Widgets',
+	DragSwitch: 'Enable/Disable Dragging',
+	Reorder: 'Reorder Camera',
+	RemovePrefrence: 'Clear All Prefrence',
+	Save: 'Save',
+	Add: 'Add',
+	Added: ' - Added',
+	Update: ' - Updated',
+	Delete: ' - Deleted',
+	Played: ' - Receipt Viewed: ',
+	LoggedOut: 'Logged Out',
+	CameraType: {
+		Default: 'Default',
+		CompleteView: '360',
+		PTZ: 'PTZ'
+	},
+	ThemeText: 'Theme Selected - ',
+	ForgetPassword: ' - Requested new password for: ',
+	ResetPassword: ' - Password Reset Success: ',
+	Widgets: ' - Available Widgets : ',
+	ReorderList: ' - Camera reordered successfully',
+	Export: ' - Exported: ',
+	Print: ' - Printed: ',
+	Search: ' - Searched: ',
+	PrintBtn: 'PRINT',
+	ExportBtn: 'EXPORT',
+	CleanFilter: 'CLEAN FILTER',
+	SwitchBtn: 'SWITCH VIEW',
+	HideUnhideColumns: 'COLUMNS',
+	FaceEvent: 'Face',
+	NotAvailable: 'N/A',
+	MobileDeviceWidthCheck: '768',
+	ScreenWidth: '415',
+	Time: 'Time:',
+	Total: 'TOTAL',
+	Target: 'TARGET',
+	UserFaces: 'USER FACES',
+	Reviewed: 'REVIEWED',
+	NotReviewed: 'NOT REVIEWED',
+	Issue: 'ISSUE',
+	Pending: 'PENDING',
+	NoReview: 'NO REVIEW',
+	UpdateDivVal: 1,
+	Back: 'Exit FullScreen',
+	TimelineExit: 'Exit Timeline',
+	PendingClip: 'Pending Clip(s)',
+	ResponseCode: {
+		'500': 'Internal Server Error',
+		'503': 'Server Overload',
+		'403': 'Server Unavailable',
+		'401': 'UnAuthorized',
+		'400': 'Bad Request',
+		'408': 'Request Timeout',
+		'200': 'Success'
+	},
+	Alarm: 'Alarm Event',
+	EventType: {
+		0: 'Custom Video Clip',
+		1: 'POS',
+		2: 'Scale',
+		3: 'Bookmark'
+	},
+	StreamConfig: {
+		HighOnly: "LowHighAlways",
+		LowOnly: "LowStreamOnly",
+		OnDemand: "OnDemand"
+	}
+};

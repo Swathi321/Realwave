@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cruise xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cruise-config.xsd" schemaVersion="138">
+    <server agentAutoRegisterKey="58ffea83-8c61-4b00-9957-2ea619549aa3" webhookSecret="db0b4aab-2182-4697-80d0-04ebb8b8985a" commandRepositoryLocation="default" serverId="749f7035-d953-4684-90fe-103e93afab0c" tokenGenerationKey="ae291758-6b4e-40ce-9213-5a6b6d37b186">
+        <security>
+            <authConfigs>
+                <authConfig id="admin" pluginId="cd.go.authentication.passwordfile">
+                    <property>
+                        <key>PasswordFilePath</key>
+                        <value>C:\Program Files (x86)\Go Server\Users\admin.txt</value>
+                    </property>
+                </authConfig>
+            </authConfigs>
+            <roles>
+                <role name="Admin">
+                    <users>
+                        <user>admin</user>
+                    </users>
+                </role>
+            </roles>
+            <admins>
+                <user>admin</user>
+            </admins>
+        </security>
+        <backup emailOnSuccess="true" emailOnFailure="true" />
+        <artifacts>
+            <artifactsDir>artifacts</artifactsDir>
+        </artifacts>
+    </server>
+    <pipelines group="Realwave_Group">
+        <authorization>
+            <view>
+                <user>admin</user>
+                <role>Admin</role>
+            </view>
+            <operate>
+                <user>admin</user>
+                <role>Admin</role>
+            </operate>
+            <admins>
+                <user>admin</user>
+                <role>Admin</role>
+            </admins>
+        </authorization>
+        <pipeline name="Realwave_Portal_Dev">
+            <materials>
+                <git url="https://github.com/RealWaveIO/ServerCode.git" branch="Dev" username="deveshspraxa" encryptedPassword="AES:DTlK/qb/SbELKmLefNt8wQ==:ckEepNINhlvo6pEmH87iYg==" />
+            </materials>
+            <stage name="Frontend_Build_Stage">
+                <approval type="success" allowOnlyOnSuccess="true" />
+                <jobs>
+                    <job name="Frontend_Build_Job">
+                        <tasks>
+                            <exec command="Common\Build_Frontend.bat" workingdir="DeploymentScripts">
+                                <runif status="passed" />
+                            </exec>
+                        </tasks>
+                    </job>
+                </jobs>
+            </stage>
+            <stage name="Frontend_Upload_Stage" fetchMaterials="false">
+                <jobs>
+                    <job name="Frontend_Upload_Stage">
+                        <tasks>
+                            <exec command="devportal.realwave.io\Upload_Frontend.bat" workingdir="DeploymentScripts" />
+                        </tasks>
+                    </job>
+                </jobs>
+            </stage>
+            <stage name="Backend_Build_Stage" fetchMaterials="false">
+                <jobs>
+                    <job name="Backend_Build_Job">
+                        <tasks>
+                            <exec command="Common\Build_Backend.bat" workingdir="DeploymentScripts" />
+                        </tasks>
+                    </job>
+                </jobs>
+            </stage>
+            <stage name="Backend_Upload_Stage" fetchMaterials="false">
+                <jobs>
+                    <job name="Backend_Upload_Job">
+                        <tasks>
+                            <exec command="devportal.realwave.io\Upload_Backend.bat" workingdir="DeploymentScripts" />
+                        </tasks>
+                    </job>
+                </jobs>
+            </stage>
+        </pipeline>
+        <pipeline name="Realwave_Portal_Test">
+            <materials>
+                <git url="https://github.com/RealWaveIO/ServerCode.git" branch="Test" username="deveshspraxa" encryptedPassword="AES:nc6YtH+Q2/R/UFCz27nyyg==:DlnWEgjZPqJq2Du0E38Z5Q==" />
+            </materials>
+            <stage name="Frontend_Build_Stage">
+                <approval type="manual" allowOnlyOnSuccess="true" />
+                <jobs>
+                    <job name="Frontend_Build_Job">
+                        <tasks>
+                            <exec command="Common\Build_Frontend.bat" workingdir="DeploymentScripts">
+                                <runif status="passed" />
+                            </exec>
+                        </tasks>
+                    </job>
+                </jobs>
+            </stage>
+            <stage name="Frontend_Upload_Stage" fetchMaterials="false">
+                <approval type="manual" allowOnlyOnSuccess="true" />
+                <jobs>
+                    <job name="Frontend_Upload_Stage">
+                        <tasks>
+                            <exec command="test.realwave.io\Upload_Frontend.bat" workingdir="DeploymentScripts" />
+                        </tasks>
+                    </job>
+                </jobs>
+            </stage>
+            <stage name="Backend_Build_Stage" fetchMaterials="false">
+                <approval type="manual" allowOnlyOnSuccess="true" />
+                <jobs>
+                    <job name="Backend_Build_Job">
+                        <tasks>
+                            <exec command="Common\Build_Backend.bat" workingdir="DeploymentScripts" />
+                        </tasks>
+                    </job>
+                </jobs>
+            </stage>
+            <stage name="Backend_Upload_Stage" fetchMaterials="false">
+                <approval type="manual" allowOnlyOnSuccess="true" />
+                <jobs>
+                    <job name="Backend_Upload_Job">
+                        <tasks>
+                            <exec command="test.realwave.io\Upload_Backend.bat" workingdir="DeploymentScripts" />
+                        </tasks>
+                    </job>
+                </jobs>
+            </stage>
+        </pipeline>
+        <pipeline name="Realwave_Portal_Prod">
+            <materials>
+                <git url="https://github.com/RealWaveIO/ServerCode.git" branch="Prod" username="deveshspraxa" encryptedPassword="AES:S/OWyMGYp+yqmeo1TkWLzw==:RIuIBSu2jqcsjjubdGq+Hw==" />
+            </materials>
+            <stage name="Frontend_Build_Stage">
+                <approval type="manual" allowOnlyOnSuccess="true" />
+                <jobs>
+                    <job name="Frontend_Build_Job">
+                        <tasks>
+                            <exec command="Common\Build_Frontend.bat" workingdir="DeploymentScripts">
+                                <runif status="passed" />
+                            </exec>
+                        </tasks>
+                    </job>
+                </jobs>
+            </stage>
+            <stage name="Frontend_Upload_Stage" fetchMaterials="false">
+                <approval type="manual" allowOnlyOnSuccess="true" />
+                <jobs>
+                    <job name="Frontend_Upload_Stage">
+                        <tasks>
+                            <exec command="live.realwave.io\Upload_Frontend.bat" workingdir="DeploymentScripts" />
+                        </tasks>
+                    </job>
+                </jobs>
+            </stage>
+            <stage name="Backend_Build_Stage" fetchMaterials="false">
+                <approval type="manual" allowOnlyOnSuccess="true" />
+                <jobs>
+                    <job name="Backend_Build_Job">
+                        <tasks>
+                            <exec command="Common\Build_Backend.bat" workingdir="DeploymentScripts" />
+                        </tasks>
+                    </job>
+                </jobs>
+            </stage>
+            <stage name="Backend_Upload_Stage" fetchMaterials="false">
+                <approval type="manual" allowOnlyOnSuccess="true" />
+                <jobs>
+                    <job name="Backend_Upload_Job">
+                        <tasks>
+                            <exec command="live.realwave.io\Upload_Backend.bat" workingdir="DeploymentScripts" />
+                        </tasks>
+                    </job>
+                </jobs>
+            </stage>
+        </pipeline>
+        <pipeline name="Realwave_Portal">
+            <materials>
+                <git url="https://github.com/RealWaveIO/ServerCode.git" branch="portal" username="deveshspraxa" encryptedPassword="AES:SKSIAk1yNFyfdqVgbHGC0Q==:4SZt3qukytWpoU2B87ZAqg==" />
+            </materials>
+            <stage name="Frontend_Build_Stage">
+                <approval type="manual" allowOnlyOnSuccess="true" />
+                <jobs>
+                    <job name="Frontend_Build_Job">
+                        <tasks>
+                            <exec command="Common\Build_Frontend.bat" workingdir="DeploymentScripts">
+                                <runif status="passed" />
+                            </exec>
+                        </tasks>
+                    </job>
+                </jobs>
+            </stage>
+            <stage name="Frontend_Upload_Stage" fetchMaterials="false">
+                <approval type="manual" allowOnlyOnSuccess="true" />
+                <jobs>
+                    <job name="Frontend_Upload_Stage">
+                        <tasks>
+                            <exec command="portal.realwave.io\Upload_Frontend.bat" workingdir="DeploymentScripts" />
+                        </tasks>
+                    </job>
+                </jobs>
+            </stage>
+            <stage name="Backend_Build_Stage" fetchMaterials="false">
+                <approval type="manual" allowOnlyOnSuccess="true" />
+                <jobs>
+                    <job name="Backend_Build_Job">
+                        <tasks>
+                            <exec command="Common\Build_Backend.bat" workingdir="DeploymentScripts" />
+                        </tasks>
+                    </job>
+                </jobs>
+            </stage>
+            <stage name="Backend_Upload_Stage" fetchMaterials="false">
+                <approval type="manual" allowOnlyOnSuccess="true" />
+                <jobs>
+                    <job name="Backend_Upload_Job">
+                        <tasks>
+                            <exec command="portal.realwave.io\Upload_Backend.bat" workingdir="DeploymentScripts" />
+                        </tasks>
+                    </job>
+                </jobs>
+            </stage>
+        </pipeline>
+        <pipeline name="Realwave_OSS_Test">
+            <materials>
+                <git url="https://github.com/RealWaveIO/OnSite.git" branch="Dev" username="deveshspraxa" encryptedPassword="AES:WZzU6FuwPQRjv4a8NpPAmA==:ls7fWyHJAOLBxWtT7NVURw==" />
+            </materials>
+            <stage name="OSS_Build_Stage">
+                <approval type="success" allowOnlyOnSuccess="true" />
+                <jobs>
+                    <job name="OSS_Build_Job">
+                        <tasks>
+                            <exec command="Common\Build_OSS.bat" workingdir="DeploymentScripts">
+                                <runif status="passed" />
+                            </exec>
+                        </tasks>
+                    </job>
+                </jobs>
+            </stage>
+            <stage name="OSS_Upload_Stage" fetchMaterials="false">
+                <jobs>
+                    <job name="OSS_Upload_Stage">
+                        <tasks>
+                            <exec command="test.realwave.io\Upload_OSS.bat" workingdir="DeploymentScripts" />
+                        </tasks>
+                    </job>
+                </jobs>
+            </stage>
+            <stage name="Daemon_Build_Stage">
+                <jobs>
+                    <job name="Daemon_Build_Job">
+                        <tasks>
+                            <exec command="Common\Build_Daemon.bat" workingdir="DeploymentScripts">
+                                <runif status="passed" />
+                            </exec>
+                        </tasks>
+                    </job>
+                </jobs>
+            </stage>
+            <stage name="Daemon_Upload_Stage" fetchMaterials="false">
+                <jobs>
+                    <job name="Daemon_Upload_Stage">
+                        <tasks>
+                            <exec command="test.realwave.io\Upload_Daemon.bat" workingdir="DeploymentScripts" />
+                        </tasks>
+                    </job>
+                </jobs>
+            </stage>
+        </pipeline>
+        <pipeline name="Realwave_OSS_Prod">
+            <materials>
+                <git url="https://github.com/RealWaveIO/OnSite.git" branch="Production" username="deveshspraxa" encryptedPassword="AES:WuT/Nx45eQ1j7pl9+kJibw==:NMXH1NVZtX1DipfmBA7bqQ==" />
+            </materials>
+            <stage name="OSS_Build_Stage">
+                <approval type="manual" allowOnlyOnSuccess="true" />
+                <jobs>
+                    <job name="OSS_Build_Job">
+                        <tasks>
+                            <exec command="Common\Build_OSS.bat" workingdir="DeploymentScripts">
+                                <runif status="passed" />
+                            </exec>
+                        </tasks>
+                    </job>
+                </jobs>
+            </stage>
+            <stage name="OSS_Upload_Stage" fetchMaterials="false">
+                <approval type="manual" allowOnlyOnSuccess="true" />
+                <jobs>
+                    <job name="OSS_Upload_Stage">
+                        <tasks>
+                            <exec command="live.realwave.io\Upload_OSS.bat" workingdir="DeploymentScripts" />
+                        </tasks>
+                    </job>
+                </jobs>
+            </stage>
+            <stage name="Daemon_Build_Stage">
+                <approval type="manual" allowOnlyOnSuccess="true" />
+                <jobs>
+                    <job name="Daemon_Build_Job">
+                        <tasks>
+                            <exec command="Common\Build_Daemon.bat" workingdir="DeploymentScripts">
+                                <runif status="passed" />
+                            </exec>
+                        </tasks>
+                    </job>
+                </jobs>
+            </stage>
+            <stage name="Daemon_Upload_Stage" fetchMaterials="false">
+                <approval type="manual" allowOnlyOnSuccess="true" />
+                <jobs>
+                    <job name="Daemon_Upload_Stage">
+                        <tasks>
+                            <exec command="live.realwave.io\Upload_Daemon.bat" workingdir="DeploymentScripts" />
+                        </tasks>
+                    </job>
+                </jobs>
+            </stage>
+        </pipeline>
+        <pipeline name="Realwave_OSS_Portal">
+            <materials>
+                <git url="https://github.com/RealWaveIO/OnSite.git" branch="portal" username="deveshspraxa" encryptedPassword="AES:WuT/Nx45eQ1j7pl9+kJibw==:NMXH1NVZtX1DipfmBA7bqQ==" />
+            </materials>
+            <stage name="OSS_Build_Stage">
+                <approval type="manual" allowOnlyOnSuccess="true" />
+                <jobs>
+                    <job name="OSS_Build_Job">
+                        <tasks>
+                            <exec command="Common\Build_OSS.bat" workingdir="DeploymentScripts">
+                                <runif status="passed" />
+                            </exec>
+                        </tasks>
+                    </job>
+                </jobs>
+            </stage>
+            <stage name="OSS_Upload_Stage" fetchMaterials="false">
+                <approval type="manual" allowOnlyOnSuccess="true" />
+                <jobs>
+                    <job name="OSS_Upload_Stage">
+                        <tasks>
+                            <exec command="portal.realwave.io\Upload_OSS.bat" workingdir="DeploymentScripts" />
+                        </tasks>
+                    </job>
+                </jobs>
+            </stage>
+            <stage name="Daemon_Build_Stage">
+                <approval type="manual" allowOnlyOnSuccess="true" />
+                <jobs>
+                    <job name="Daemon_Build_Job">
+                        <tasks>
+                            <exec command="Common\Build_Daemon.bat" workingdir="DeploymentScripts">
+                                <runif status="passed" />
+                            </exec>
+                        </tasks>
+                    </job>
+                </jobs>
+            </stage>
+            <stage name="Daemon_Upload_Stage" fetchMaterials="false">
+                <approval type="manual" allowOnlyOnSuccess="true" />
+                <jobs>
+                    <job name="Daemon_Upload_Stage">
+                        <tasks>
+                            <exec command="portal.realwave.io\Upload_Daemon.bat" workingdir="DeploymentScripts" />
+                        </tasks>
+                    </job>
+                </jobs>
+            </stage>
+        </pipeline>
+        <pipeline name="REXNVRLib" lockBehavior="unlockWhenFinished">
+            <materials>
+                <git url="https://github.com/RealWaveIO/REXCode.git" branch="Dev" username="dakrealwave" encryptedPassword="AES:8Vzqjd3lFe8ch5VzYFMyHQ==:A+3joG9PWQxpBAiFFg4V5g==" materialName="REXNVRLib" />
+            </materials>
+            <stage name="ConnectServer">
+                <jobs>
+                    <job name="Connect">
+                        <tasks>
+                            <exec command="Build_REXNVRLIB.bat" workingdir="DeploymentScripts">
+                                <arg />
+                                <runif status="passed" />
+                            </exec>
+                        </tasks>
+                        <resources>
+                            <resource>Linux</resource>
+                        </resources>
+                    </job>
+                </jobs>
+            </stage>
+        </pipeline>
+    </pipelines>
+</cruise>

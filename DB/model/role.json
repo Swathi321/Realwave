@@ -1,0 +1,62 @@
+{
+	"__v" : NumberInt(25),
+	"_id" : ObjectId("5c540eefb224473e50f12236"),
+	"createdAt" : ISODate("2019-02-01T14:48:39.534+05:30"),
+	"description" : "Admin",
+	"name" : "Admin",
+	"permissions" : [
+		ObjectId("5c5414ca9f2b541dd0fbae1e"),
+		ObjectId("5c5414ca9f2b541dd0fbae1f"),
+		ObjectId("5c5414ca9f2b541dd0fbae20"),
+		ObjectId("5c5414ca9f2b541dd0fbae21"),
+		ObjectId("5c5414ca9f2b541dd0fbae22"),
+		ObjectId("5c5414ca9f2b541dd0fbae23"),
+		ObjectId("5c5414ca9f2b541dd0fbae24"),
+		ObjectId("5c5414ca9f2b541dd0fbae25"),
+		ObjectId("5c5414ca9f2b541dd0fbae26"),
+		ObjectId("5c5414ca9f2b541dd0fbae27"),
+		ObjectId("5c5414ca9f2b541dd0fbae28"),
+		ObjectId("5c5414ca9f2b541dd0fbae29"),
+		ObjectId("5c5818327a0dd941e0266a1b"),
+		ObjectId("5c5818327a0dd941e0266a1c"),
+		ObjectId("5c5818327a0dd941e0266a1d"),
+		ObjectId("5c5818327a0dd941e0266a1e"),
+		ObjectId("5c5818327a0dd941e0266a1f"),
+		ObjectId("5c5818327a0dd941e0266a20"),
+		ObjectId("5c5818327a0dd941e0266a21"),
+		ObjectId("5c6a6f97a1602e2ac8b8ef65"),
+		ObjectId("5c8201643d6da02c48adc5fe"),
+		ObjectId("5c8201643d6da02c48adc5ff"),
+		ObjectId("5c8b4b253caf2f1db429fc21"),
+		ObjectId("5c9105f812ec34293c73859f")
+	],
+	"updatedAt" : ISODate("2019-03-27T10:35:57.804+05:30")
+},
+{
+	"__v" : NumberInt(7),
+	"_id" : ObjectId("5c544ffa72730e1d603d3512"),
+	"createdAt" : ISODate("2019-02-01T19:26:10.766+05:30"),
+	"description" : "Client - Admin",
+	"name" : "Client - Admin",
+	"permissions" : [
+		ObjectId("5c5818327a0dd941e0266a1c"),
+		ObjectId("5c5818327a0dd941e0266a1b"),
+		ObjectId("5c5414ca9f2b541dd0fbae28"),
+		ObjectId("5c5414ca9f2b541dd0fbae1f")
+	],
+	"updatedAt" : ISODate("2019-06-10T15:17:58.456+05:30")
+},
+{
+	"__v" : NumberInt(3),
+	"_id" : ObjectId("5c581923de665b2bc00615a6"),
+	"createdAt" : ISODate("2019-02-04T16:21:15.677+05:30"),
+	"description" : "User",
+	"name" : "User",
+	"permissions" : [
+		ObjectId("5c5414ca9f2b541dd0fbae27"),
+		ObjectId("5c5414ca9f2b541dd0fbae21"),
+		ObjectId("5c5414ca9f2b541dd0fbae20"),
+		ObjectId("5c5414ca9f2b541dd0fbae1f")
+	],
+	"updatedAt" : ISODate("2019-06-24T21:58:13.269+05:30")
+},

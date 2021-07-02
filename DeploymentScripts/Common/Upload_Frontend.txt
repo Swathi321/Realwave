@@ -1,0 +1,10 @@
+option batch on
+option confirm off
+open %ftpHost%
+synchronize remote "C:\DCPL\App_Offline" "%remotePath%"
+rm %remotePath%/*.map
+synchronize remote "%deploymentPath%" "%remotePath%"
+option transfer binary
+rm "%remotePath%/app_offline.htm"
+close
+exit

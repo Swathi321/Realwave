@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_","ns":"realwave.comment"}],"uuid":"5c5498fae17045e1ba5304dc47bfc205"}

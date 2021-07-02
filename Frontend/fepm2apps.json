@@ -1,0 +1,12 @@
+{
+  "apps": [
+    {
+      "name": "New-Realwave UI",
+      "script": "/home/ec2-user/new-realwave/realwave/Frontend/node_modules/.bin/react-scripts start",
+      "env": {
+        "NODE_ENV": "production",
+        "PORT": "4000"
+      }
+    } 
+  ]
+}
